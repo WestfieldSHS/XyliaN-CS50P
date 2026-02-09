@@ -15,8 +15,5 @@ def percent_to_float(p):
 	p = p/100
 	return p
 
-if __name__ == '__main__':
-	dollars = '$50.00'
-	percent = '15%'
 	main()
 				  
