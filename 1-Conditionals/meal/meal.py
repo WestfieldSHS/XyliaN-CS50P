@@ -9,4 +9,11 @@ def main():
     elif 18.00 <= convert(time) <= 19.45:
         print("It's dinner time")
     else:
-        print("It's work time:'(")
+        return
+    
+#convert define
+def convert(time):
+    hours, minutes = time.split(":")
+    hours = float(hours)
+    minutes = float(minutes)
+    
