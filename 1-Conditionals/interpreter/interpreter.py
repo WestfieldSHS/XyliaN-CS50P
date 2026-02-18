@@ -12,9 +12,11 @@ if y == '+':
 elif y == '-':
     result = x - z
     print(result)
-
-    
-
-    
-
-
+elif y == '*':
+    result = x * z
+    print(result)
+elif y == '/':
+    result = x / z
+    print(result)
+else: 
+    print('Invalid')
