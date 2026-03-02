@@ -4,11 +4,11 @@ def main():
 
 
 def to_snake(camel_string):
-    snake_string = '_'
+    snake_string = ''
     for i in range(len(camel_string)):
         if i != 0:
             if camel_string[i].isupper():
-                snake_string += f"_{camel_string[i].islower()}"
+                snake_string += f"_{camel_string[i].lower()}"
                 continue
             snake_string += camel_string[i]
         print("snake_case:", snake_string)
