@@ -11,7 +11,9 @@ def to_snake(camel_string):
                 snake_string += f"_{camel_string[i].lower()}"
                 continue
             snake_string += camel_string[i]
-        print("snake_case:", snake_string)
+        else:
+            snake_string += camel_string[0]
+    print("snake_case:", snake_string)
 
 if __name__ == "__main__":
     main()
