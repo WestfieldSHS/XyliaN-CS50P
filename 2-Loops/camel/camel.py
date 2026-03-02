@@ -2,6 +2,7 @@ def main():
     word = input("camelCase: ")
     to_snake(word)
 
+
 def to_snake(camel_string):
     snake_string = '_'
     for i in range(len(camel_string)):
@@ -10,7 +11,7 @@ def to_snake(camel_string):
                 snake_string += f"_{camel_string[i].islower()}"
                 continue
             snake_string += camel_string[i]
-            print("snake_case:", snake_string)
+        print("snake_case:", snake_string)
 
 if __name__ == "__main__":
     main()
